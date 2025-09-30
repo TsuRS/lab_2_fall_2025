@@ -98,7 +98,7 @@ class ForwardKinematics(Node):
 
         # TODO: Extract the end-effector position. The end effector position is a 3x1 vector (not in homogenous coordinates)
         end_effector_position = T_0_ee @ np.array([0, 0, 0, 0])
-        end_effector_position = end_effector_position[0:2]
+        end_effector_position = end_effector_position[0:3]
 
         return end_effector_position
 
